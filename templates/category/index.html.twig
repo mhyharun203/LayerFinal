@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+
+    {%for value in values  %}
+    <a href="/category/products/{{ value.name }}"> {{ value.name }} </a><br>
+
+    {% endfor %}
+
+{% endblock %}
